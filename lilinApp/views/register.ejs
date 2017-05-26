@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link href="https://cdn.bootcss.com/semantic-ui/2.2.10/semantic.min.css" rel="stylesheet">
+  </head>
+  <body>
+   	<form action="/register" method="post" class="ui grid centered mt150"> <!-- 栅格化系统 网格系统  -->
+    	<div class="four wide column">
+		    <div class="ui form">
+			    <div class="field">
+			      <label><%=userName %></label>
+			      <input name="userName" type="text" placeholder=<%=userName %>>
+			    </div>
+			    <div class="field">
+			      <label><%=passWord %></label>
+			      <input name="passWord" type="password" placeholder=<%=passWord %>>
+			    </div>
+			    <button class="ui button green large fluid"> 注册 </button>
+			</div>
+		</div>
+	</form>
+  </body>
+</html>
